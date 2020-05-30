@@ -1,5 +1,7 @@
 This is a ReFocus Time Savings Calculator User Stories
 
+******JSON FILES and NODE_MODULES FOLDER ARE ONLY USED FOR TESTING THAT I DONE USING JEST*******
+
 This program takes the input from the users which involves number of employees/staff
 the company has. It further takes ask for Producers, Administrators, and Account Executive out of those employees.
 It contains a slider to set number of clients the agency has, As check a checkbox about whether the company uses an Agency
@@ -22,5 +24,8 @@ I have used ReFocus logo image from their website for my mini Refocus Time Savin
 /*-----Unit Testing---*/
 
 I have also made 4 unit tests to test my javascript code in order to test the calculation with or without AMS.
+
+
+
 
 
