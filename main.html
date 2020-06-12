@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+		<title> ReFocus Time Savings Calculator User Stories </title>
+	 	<meta name = "viewport" content = "width=device-width, initial-scale=1">
+    	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+		<link rel="stylesheet"  href="style.css">
+	</head>
+ 	<body>
+
+<!--TITLE AND BUTTON--> 		
+
+ 		<header>
+ 					<div class="title">
+ 						<div class="image">
+ 							<img src ="logo.png" alt="ReFocus Logo">
+ 						</div>
+ 						<h1>
+ 							TIME SAVING CALCULATOR
+ 						</h1>
+
+ 						<div class = "Box">
+		 				<button class="Click" onclick="checkClick()">Get Started</button>
+		 			</div>
+
+ 		</header>
+
+<!--TITLE AND BUTTON-->
+
+
+<!--FORM-->
+
+
+ 		<div class="container-fluid">
+ 			<div class="row mainBlock">
+ 				<div class = "visibleRight" hidden="false">
+
+    				<div class="col-md-6 offset-md-3">
+    					
+      						<div class = "input-field out">
+	 							<div class = "field">
+	 							<h5>Total number of employees/staff your company has.</h5>
+	 								<input type="number" name="" class = "staff" >
+	 							</div>
+	 						</div>
+
+	 						<div class = "underInfo">
+	 						
+		 						<div class = "input-field">
+		 							<div class = "field">
+		 								<h5>Number of producers</h5>
+		 								<input type="number" name="" class = "producer" >
+		 							</div>
+		 						</div>
+			 					
+			 					<div class = "input-field ">
+			 						<div class = "field">
+			 							<h5>Number of administrators </h5>
+			 							<input type="number" name="" class = "admin" >
+			 						</div>
+			 					</div>
+			 					
+			 					<div class = "input-field">
+			 						
+			 							<div class = "field">
+			 								<h5>Number of account executives </h5>
+			 								<input type="number" name="" class = "executive" placeholder="">
+			 							</div>
+		 						</div>
+		 					</div>
+
+		 					<div class = "input-field out">
+		 						<div class="form-check">
+		 							<h5>Number of clients your agency has</h5>
+			 						<div class="slidecontainer">
+									  <input type="range" min="0" max="100" value="0" class="slider" id="myRange" oninput="slide()">
+									  <h5 style="font-weight: 400"><span id="demo" style="color: #000000"></span></h5>
+									</div>
+								</div>
+		 					</div>
+
+	 						<div class = "input-field out">
+
+		 							<div class="form-check">
+									    <label class="form-check-label" for="materialUnchecked"><h5>Does your company use an Agency Management System?</h5></label><br>
+									    <input type="checkbox" class="box" id="materialUnchecked" onclick="checkClick()">
+									    
+									</div>
+	    					</div>
+
+	 						<div class = "input-field out">
+		 						<div class = "field">
+			 							<h5>How often do you speak to underwriters?</h5>
+					 					<div class="custom-control custom-radio custom-control-inline">
+										  <input type="radio" id="customRadioInline1" name="customRadioInline1" class="custom-control-input">
+										  <label class="custom-control-label" for="customRadioInline1" >Very Often</p></label>
+										</div>
+										
+										<div class="custom-control custom-radio custom-control-inline">
+										  <input type="radio" id="customRadioInline2" name="customRadioInline1" class="custom-control-input">
+										  <label class="custom-control-label" for="customRadioInline2">Often</label>
+										</div>
+
+										<div class="custom-control custom-radio custom-control-inline">
+										  <input type="radio" id="customRadioInline3" name="customRadioInline1" class="custom-control-input">
+										  <label class="custom-control-label" for="customRadioInline3">Not Often</label>
+										</div>
+
+										<div class="custom-control custom-radio custom-control-inline">
+										  <input type="radio" id="customRadioInline4" name="customRadioInline1" class="custom-control-input">
+										  <label class="custom-control-label" for="customRadioInline4">Never</label>
+										</div>
+		 						</div>
+		 					</div>
+
+		 					<div class = "input-field out">
+		 							<div class = "field">
+		 								<h5>Number of carriers that you reach out to in order to get a policy written.</h5>
+		 								<input type="number" name="" class = "carriers" >
+		 							</div>
+	    					</div>
+
+			  				<div class = "button">
+			  					<button  onclick ="calculate()">Calculate</button>
+			  				</div >	
+	  				</div>
+    			</div>			
+  			</div>	
+		</div>
+
+<!--FORM-->
+
+<!--Final Result-->
+
+		<section>
+
+			<div id = "finalresult">
+				
+				<div id = "content">
+				
+					<div id="cross">
+						<button id="close" onclick = "closePannel()">x</button>
+					</div>
+					<div id = "textresult">
+						<h5 id="finalOut"></h5>
+					</div>
+
+				</div>
+			</div>
+
+		</section>
+
+
+<!--Final Result-->
+		
+
+ <script src="script.js">
+ </script>
+</body>   
+
+</html>

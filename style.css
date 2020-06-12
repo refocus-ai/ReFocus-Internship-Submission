@@ -1,0 +1,321 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,500;1,500&display=swap');
+
+body{
+	margin:10px;
+	font-family: 'Poppins', sans-serif;
+	background: linear-gradient(to right, rgb(162, 217, 206), rgb(88, 214, 141), rgb(93, 173, 226),rgb(187, 143, 206));
+	background-size: 400% 400%;
+	background-repeat: repeat;
+	animation: changeBG 10s ease-in-out infinite;
+
+}
+*{
+
+    box-sizing : border-box;
+    margin: 0;
+
+}
+
+header{ 
+		
+		left: 0px;
+		right: 0px;
+}
+
+/*--------------Button and Title----------*/
+
+ .title{
+
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+	max-width: 100%;
+	margin: auto;
+	width: 100%;	
+	display: block;
+	
+
+
+}
+
+ .title h1{					
+	
+	display: inline-block;
+	text-transform: uppercase;
+	font-size: 50px;
+	font-weight: 700;
+	position: relative;
+	margin: 0 0 40px;
+	color: #ffffff;
+	text-shadow: 0px 10px 80px  #000000;	
+	animation: animate 5s 1;		
+}
+
+
+.title img{
+
+	width:185px;
+	height:50px;
+	margin: 20px;
+	animation: animate 2s 1;
+	
+
+
+}
+
+.title h1:before{					
+	
+	content: '';
+	right: 60px;
+	position: absolute;
+	left: 0;
+	height: 3px;
+	background-color: rgb(171, 235, 198) ;		
+	bottom:0px;
+	left: 10%;
+	right: 5%;
+
+}
+
+.title .Box{
+	animation: anim 6s 1;
+}
+.title .Box button{
+
+	background-color: transparent;
+	border-color:  #ffffff;
+	color: white;
+	font-weight: 500;
+	transform: scale(2);
+	font-size: 10px;
+	padding: 5px;
+	cursor: pointer;
+	border-radius: 5px;
+	transition: all .5s ease;
+	
+
+}
+
+.title .Box button:hover{
+
+	background-color: #ffffff; 
+
+	color: rgb(171, 235, 198);
+}
+
+/*--------------End of Button and Title----------*/
+
+
+/*--------------Form------------------*/
+.offset-md-3 {
+
+	background-color: rgba(0, 0, 0, 0.2);
+	border-radius: 20px;
+	max-width: 100%;
+	margin: auto;
+	text-align: center;
+	padding: 15px;
+	padding-top: 30px;	
+	animation: anim 1s 1;
+	justify-content: space-around;
+}
+
+.mainBlock{
+
+	justify-content: space-around;
+}
+
+.out{
+	margin-bottom: 30px;
+
+}
+
+input[type="checkbox"]
+{
+	transform: scale(1.2);
+}
+
+input[type="radio"]
+{
+	transform: scale(1.2);
+}
+
+.slider {
+
+  width: 40%;
+
+
+}
+
+.input-field h5{
+
+	color: #ffffff;
+
+}
+
+
+.input-field .field input{			/*for all the input fields*/	
+	border-radius: 10px;
+	width: 70px;	
+	border-top:transparent;	
+	background-color: transparent;				
+	
+}
+
+.underInfo{
+
+	background-color: rgba(0, 0, 0, 0.05);
+	border-radius: 20px;
+	max-width: 50%;
+	
+	text-align:center;
+	margin: auto;
+}
+
+.underInfo:hover{
+
+	
+	box-shadow: 0px 30px 50px  rgba(11, 83, 69,0.4);
+	
+}
+
+ .underInfo .input-field{
+
+	
+	border-radius: 15px;
+	padding: 10px;
+	margin-bottom: 30px;
+
+}
+.button{
+	
+	height: 100%;
+	text-align: center;
+	margin: 20px;
+		
+}
+
+.button button{
+	background-color: transparent;
+	border-color:  #ffffff;
+	color: white;
+	font-weight: 500;
+	transform: scale(2);
+	font-size: 10px;
+	padding: 5px;
+	cursor: pointer;
+	border-radius: 5px;
+	transition: all .5s ease;
+
+
+}
+
+.button button:hover{
+
+	background-color: #ffffff; 
+
+	color: rgb(171, 235, 198);
+}
+
+
+/*--------------End Form------------------*/
+
+
+/*--------------Result------------------*/
+
+#finalresult{
+
+	display: none;
+	position: fixed;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	z-index: 100;
+	background-color: rgba(0,0,0,0.8);
+	justify-content: center;
+	align-items: center;
+	animation: anim 2s 1;
+}
+
+
+#finalresult #cross button{
+	
+	position: absolute;
+	right: 10px;
+	top: 10px;
+	cursor: pointer;
+	background-image: linear-gradient(to right, rgb(162, 217, 206), rgb(88, 214, 141));
+	border-radius: 100px;
+	border-color: transparent;
+	font-weight: 600;
+	transition: all .5s ease;
+	color: #000000;	
+}
+
+#finalresult #cross button:hover{
+	background-image: linear-gradient(to right, rgb(28, 40, 51), rgb(23, 32, 42));
+	color: #ffffff;
+}
+
+
+ #finalresult #textresult{	
+	padding: 30px;
+	text-align: center;
+	background-image: linear-gradient(to top, rgb(162, 217, 206), rgb(88, 214, 141));
+	border-radius: 10px;
+}
+
+/*--------------End Result------------------*/
+
+/*----animation----*/
+
+@keyframes changeBG{
+
+	0%{
+		background-position: 0 50%;
+
+	}
+
+	50%{
+		background-position: 100% 50%;
+		
+	}
+
+	100%{
+		background-position: 0 50%;	
+	}
+}
+
+@keyframes animate{
+	0%{
+		transform: scale(0);
+	}
+	100%{
+		transform: scale(1);
+	}
+}
+
+@keyframes anim{
+	0%{
+		opacity: 0%;
+	}
+	100%{
+		opacity: 100%;
+	}
+}
+
+/*----end animation----*/
+
+
+
+
+
+
+
+
+
+
+
